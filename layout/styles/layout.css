@@ -2,6 +2,14 @@
 @import url("font-awesome.min.css");
 @import url("framework.css");
 
+/* Top ------------------------------------------------------------------------------------------------------------------- */
+
+#top {}
+
+#top .bgded.overlay.light {
+	background-image: url('../../images/demo/backgrounds/01.png');
+}
+
 /* Nav ------------------------------------------------------------------------------------------------------------------- */
 
 #nav {}
@@ -102,6 +110,10 @@
 }
 
 /* Content Area --------------------------------------------------------------------------------------------------------------- */
+
+.wrapper.row2.bgded.overlay {
+	background-image:url('../../images/demo/backgrounds/02.png');
+}
 
 .container {
   padding: 80px 0;
