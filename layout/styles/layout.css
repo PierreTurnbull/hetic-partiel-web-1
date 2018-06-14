@@ -895,7 +895,7 @@ input:focus, textarea:focus, *:required:focus {
 
 .row1 {
   color: #FFFFFF;
-  background-color: rgba(0, 0, 0, .2);
+  background-color: rgba(0, 0, 0, .5);
 }
 
 .row2 {
@@ -1129,15 +1129,79 @@ table a, #comments a {
   .hoc {
     max-width: 90%;
   }
+	#nav {}
+	#nav .row0 {}
+	#nav .row1 {
+		display: flex;
+	}
+	#nav .row1
   #topbar {}
   #header {
+		width: 100%;
     padding: 30px 0;
+		display: flex;
+		justify-content: space-between;
   }
   #header #logo {
     margin-top: 3px;
+		order: 1;
   }
-  #mainav {}
-  #mainav ul {
+  #mainav {
+		align-self: center;
+		width: 32px;
+		height: 32px;
+		order: 0;
+		position: relative;
+	}
+	#mainav .burger {
+		display: block;
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+	}
+	#mainav .burger_bar {
+		width: 120%;
+		height: 3px;
+		background-color: white;
+		position: absolute;
+		left: -10%;
+	}
+	#mainav .burger_bar:first-child {
+		top: 0;
+	}
+	#mainav .burger_bar:nth-child(2) {
+		top: 50%;
+		margin-top: -1.5px;
+	}
+	#mainav .burger_bar:last-child {
+		bottom: 0;
+	}
+	#mainav .burger.open .burger_bar:first-child {
+		transform: rotate(45deg);
+		top: 45%;
+	}
+	#mainav .burger.open .burger_bar:nth-child(2) {
+		opacity: 0;
+	}
+	#mainav .burger.open .burger_bar:last-child {
+		transform: rotate(-45deg);
+		bottom: 45%;
+	}
+	#header .clear {
+		position: absolute;
+		top: 54px;
+		display: block;
+		opacity: 0;
+		height: 0;
+	}
+	#header .clear.open {
+		opacity: 1;
+		background-color: rgba(0, 0, 0, 0.5);
+		height: auto;
+	}
+	#mainav ul {
     display: none;
   }
   #mainav form {
