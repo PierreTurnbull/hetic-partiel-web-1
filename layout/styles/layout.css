@@ -45,6 +45,10 @@
   border-right: none;
 }
 
+#topbar ul li i:hover {
+	color: #CF9C67;
+}
+
 #topbar i {
   line-height: normal;
 }
@@ -55,6 +59,10 @@
 
 #header #logo {
   margin: 30px 0 0 0;
+}
+
+#header #logo:hover {
+	color: #CF9C67;
 }
 
 #header #logo h1 {
@@ -1097,6 +1105,14 @@ tr:nth-child(even), #comments li:nth-child(even) {
 
 table a, #comments a {
   background-color: inherit;
+}
+
+a:hover {
+	color: #EFCC97;
+}
+
+form button[type=submit]:hover {
+	background-color: #BF8C57;
 }
 
 /* ------------------------------------------------------------------------------------------------------------ */

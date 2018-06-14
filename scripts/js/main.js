@@ -21,11 +21,13 @@ var ui = {
 
 // make a smooth scrolling to the top of the page on .scroll_top click
 ui.footer.scroll_top.addEventListener("click", function() {
+	var row1_style = ui.nav.row1.self.style;
 	window.scroll({
 	  top: 0,
 	  left: 0,
 	  behavior: 'smooth'
 	});
+	row1_style.top = "52px";
 });
 
 // make the header appear when scrolling to the top and disappear when scrolling
